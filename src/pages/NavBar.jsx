@@ -5,7 +5,7 @@ export default function NavBar({ isNavbarOn }) {
   if (isNavbarOn) {
     return (
       <header
-        className="
+        className=" transition-all duration-1000
       fixed flex h-20 w-screen items-center justify-between
       rounded-full bg-slate-500 px-4 py-3 text-slate-200"
       >
@@ -55,7 +55,7 @@ export default function NavBar({ isNavbarOn }) {
 
   return (
     <header
-      className="
+      className=" transition-all duration-1000
     fixed h-20 w-20 flex items-center justify-center 
     rounded-full bg-slate-500 px-4 py-3 text-slate-200"
     >
