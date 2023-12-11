@@ -41,11 +41,11 @@ export default function HeroSection() {
             <span className="highlight">front-end</span> development.
           </p>
 
-          <div className="flex justify-around lg:justify-start mt-4 lg:mt-6">
-            <button className=" yellow-red w-40  mr-4 rounded-full px-6 font-semibold text-black ">
+          <div className="mt-4 sm:flex lg:mt-6">
+            <button className="yellow-red mb-4 mr-4 w-40 w-full rounded-full px-6 py-3 font-semibold text-black sm:mb-0  sm:py-0 ">
               Hire Me
             </button>
-            <button className="yellow-red  w-40  mr-4 font-semibold  rounded-full px-1 py-1 text-white">
+            <button className="yellow-red mr-4  w-40  w-full  rounded-full px-1 py-1 font-semibold text-white ">
               <span className="block rounded-full  bg-black px-5 py-2  ">
                 Download CV
               </span>
