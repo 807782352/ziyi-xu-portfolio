@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .yellow-red {
+    @apply bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500;
+  }
+
+  .highlight {
+    @apply hover:yellow-red font-extrabold hover:rounded-full hover:px-2 hover:py-0.5 hover:text-black;
+  }
+}

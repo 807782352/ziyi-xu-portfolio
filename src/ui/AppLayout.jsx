@@ -20,7 +20,7 @@ export default function AppLayout() {
 
   return (
     <div className="overflow-auto" onWheel={handleScroll}>
-      <NavBar isNavbarOn={isNavbarOn} />
+      {/* <NavBar isNavbarOn={isNavbarOn} /> */}
       <main>
         <Outlet />
       </main>
