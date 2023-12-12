@@ -1,10 +1,12 @@
 import { TypeAnimation } from "react-type-animation";
 import myImage from "/public/images/self-image.jpg";
+import Button from "../ui/Button";
+import DownloadButton from "../ui/DownloadButton";
 
 export default function HeroSection() {
   return (
     <section>
-      <div className="grid grid-cols-1 lg:grid-cols-12">
+      <div className="mt-20 grid grid-cols-1 lg:grid-cols-12">
         <div className="lg:col-span-8 lg:place-self-start ">
           <h1 className="mb-6 text-5xl  font-extrabold text-slate-100 lg:text-6xl">
             <span className="yellow-red bg-clip-text text-transparent">
@@ -42,14 +44,12 @@ export default function HeroSection() {
           </p>
 
           <div className="mt-4 sm:flex lg:mt-6">
-            <button className="yellow-red mb-4 mr-4 w-40 w-full rounded-full px-6 py-3 font-semibold text-black sm:mb-0  sm:py-0 ">
-              Hire Me
-            </button>
-            <button className="yellow-red mr-4  w-40  w-full  rounded-full px-1 py-1 font-semibold text-white ">
-              <span className="block rounded-full  bg-black px-5 py-2  ">
-                Download CV
+            <Button type="primary-full">Hire Me</Button>
+            <Button type="horrow">
+              <span className="block rounded-full bg-black px-5 py-2">
+                <DownloadButton />
               </span>
-            </button>
+            </Button>
           </div>
         </div>
 

@@ -1,65 +1,104 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import NavLinkItem from "../features/Navbar/NavLinkItem";
+import MenuOverlay from "../features/Navbar/MenuOverlay";
+import Button from "../ui/Button";
+import DownloadButton from "../ui/DownloadButton";
 
-export default function NavBar({ isNavbarOn }) {
-  if (isNavbarOn) {
-    return (
-      <header
-        className=" transition-all duration-1000
-      fixed flex h-20 w-screen items-center justify-between
-      rounded-full bg-slate-500 px-4 py-3 text-slate-200"
-      >
-        <Link to="/"> Ziyi Xu's Portfolio</Link>
-        <div className="flex space-x-10 uppercase ">
-          <Link
-            to="/about"
-            className="hover:border-b-2 hover:border-slate-200 hover:font-bold"
-          >
-            About
-          </Link>
-          <Link
-            to="/skill"
-            className="hover:border-b-2 hover:border-slate-200 hover:font-bold"
-          >
-            Skill
-          </Link>
-          <Link
-            to="/project"
-            className="hover:border-b-2 hover:border-slate-200 hover:font-bold"
-          >
-            Project
-          </Link>
-          <Link
-            to="/education"
-            className="hover:border-b-2 hover:border-slate-200 hover:font-bold"
-          >
-            Education
-          </Link>
-          <Link
-            to="/activity"
-            className="hover:border-b-2 hover:border-slate-200 hover:font-bold"
-          >
-            Activity
-          </Link>
-          <Link
-            to="/contact"
-            className="hover:border-b-2 hover:border-slate-200 hover:font-bold"
-          >
-            Contact
-          </Link>
-        </div>
-        <button>Download CV</button>
-      </header>
-    );
-  }
+export default function NavBar() {
+  const navLinks = [
+    {
+      url: "#about",
+      title: "About",
+      id: "1",
+    },
+    {
+      url: "#skill",
+      title: "Skill",
+      id: "2",
+    },
+    {
+      url: "#project",
+      title: "Project",
+      id: "3",
+    },
+    {
+      url: "#education",
+      title: "Education",
+      id: "4",
+    },
+    {
+      url: "#activity",
+      title: "Activity",
+      id: "5",
+    },
+    {
+      url: "#contact",
+      title: "Contact",
+      id: "6",
+    },
+  ];
+
+  const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <header
-      className=" transition-all duration-1000
-    fixed h-20 w-20 flex items-center justify-center 
-    rounded-full bg-slate-500 px-4 py-3 text-slate-200"
+    // fixed the navbar during window scrolling
+    <nav
+      className={` container 
+    fixed left-0 right-0 top-0 z-10 mx-auto bg-slate-900 px-8 py-5 ${
+      navbarOpen ? "rounded-[44px] opacity-100" : "rounded-full opacity-90"
+    } `}
     >
-      <span className="material-symbols-outlined text-4xl">menu</span>
-    </header>
+      <div
+        className="   flex  
+      items-center justify-between  text-slate-100 "
+      >
+        <Link to="/">
+          <span className="text-xl md:text-2xl lg:text-3xl font-extrabold">Logo</span>
+        </Link>
+
+        <div className="mobile-menu md:hidden">
+          {navbarOpen ? (
+            <button
+              onClick={() => setNavbarOpen(false)}
+              className="flex items-center rounded px-3 py-3 text-slate-200 hover:border hover:border-white hover:text-white"
+            >
+              <span className="material-symbols-outlined">close</span>
+            </button>
+          ) : (
+            <button
+              onClick={() => setNavbarOpen(true)}
+              className="flex items-center rounded px-3 py-3 text-slate-200 hover:border hover:border-white hover:text-white "
+            >
+              <span className="material-symbols-outlined ">menu</span>
+            </button>
+          )}
+        </div>
+
+        {!navbarOpen && (
+          <div className="menu hidden md:block">
+            <ul className="flex items-center p-4 uppercase md:flex-row md:space-x-2  md:p-0 ">
+              {navLinks.map((item) => {
+                return (
+                  <NavLinkItem
+                    url={item.url}
+                    title={item.title}
+                    key={item.id}
+                  />
+                );
+              })}
+            </ul>
+          </div>
+        )}
+
+        <div className="hidden lg:block ">
+          <Button type="primary">
+            <DownloadButton />
+          </Button>
+        </div>
+      </div>
+
+      {navbarOpen && <MenuOverlay menuItems={navLinks} />}
+    </nav>
   );
 }
