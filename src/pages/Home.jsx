@@ -1,5 +1,6 @@
 import About from "./About";
 import HeroSection from "./HeroSection";
+import Skill from "./Skill";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <div className="container mx-auto px-6 py-20">
         <HeroSection />
         <About />
+        <Skill />
       </div>
     </main>
   );
