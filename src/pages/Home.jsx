@@ -1,3 +1,4 @@
+import About from "./About";
 import HeroSection from "./HeroSection";
 
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
     <main className=" flex min-h-screen flex-col bg-slate-950 ">
       <div className="container mx-auto px-6 py-20">
         <HeroSection />
+        <About />
       </div>
     </main>
   );
