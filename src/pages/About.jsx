@@ -1,6 +1,7 @@
 import { useState, useTransition } from "react";
 import MyImage from "/images/hero-image.jpg";
 import TabButton from "../ui/TabButton";
+import SectionHeader from "../ui/SectionHeader";
 
 const TAB_DATA = [
   {
@@ -85,14 +86,10 @@ export default function About() {
 
   return (
     <section className="container mx-auto mt-20 text-white">
-      <h2 className=" text-center">
-        <span className="border-b-2 border-inherit border-orange-400 py-1 text-4xl font-bold uppercase tracking-[0.2em]">
-          About Me
-        </span>
-      </h2>
-      <h3 className="mt-4 text-center font-bold text-slate-300">
-        A breif intro at my journey in tech
-      </h3>
+      <SectionHeader
+        title="About Me"
+        subtitle="A breif intro at my journey in tech"
+      />
 
       <div className="grid grid-flow-row place-items-center gap-4 md:mt-16 md:grid-cols-12 md:grid-rows-none  md:place-items-start">
         <img
@@ -101,7 +98,7 @@ export default function About() {
           className="mt-14 w-[350px]  md:col-start-2 md:col-end-5 md:w-[300px]"
         />
 
-        <div className="mt-6 md:mt-0 md:col-start-6 md:col-end-12">
+        <div className="mt-6 md:col-start-6 md:col-end-12 md:mt-0">
           <div className="flex items-start justify-end">
             {TAB_DATA.map((item) => (
               <TabButton
