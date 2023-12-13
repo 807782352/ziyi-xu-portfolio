@@ -1,5 +1,5 @@
 import { useState, useTransition } from "react";
-import MyImage from "/public/images/hero-image.jpg";
+import MyImage from "/images/hero-image.jpg";
 import TabButton from "../ui/TabButton";
 
 const TAB_DATA = [
@@ -98,10 +98,10 @@ export default function About() {
         <img
           src={MyImage}
           alt="Ziyi Xu's Image"
-          className="mt-14 w-[200px]  md:col-start-2 md:col-end-5 md:w-[300px]"
+          className="mt-14 w-[350px]  md:col-start-2 md:col-end-5 md:w-[300px]"
         />
 
-        <div className=" md:col-start-6 md:col-end-12">
+        <div className="mt-6 md:mt-0 md:col-start-6 md:col-end-12">
           <div className="flex items-start justify-end">
             {TAB_DATA.map((item) => (
               <TabButton
