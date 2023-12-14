@@ -12,3 +12,23 @@
   }
 }
 
+/* use for dynamic border in SkillItem */
+.skill-item {
+  @apply relative flex h-full w-full flex-col flex-wrap items-center justify-around gap-5 rounded-3xl py-8 overflow-hidden;
+  position: relative;
+}
+
+.skill-item::before,
+.skill-item::after {
+  content: '';
+  position: absolute;
+}
+
+.skill-item::before {
+  @apply inset-1 z-10 rounded-3xl bg-slate-900; 
+}
+
+.skill-item::after {
+  @apply -top-full left-[-100%] h-[300%] w-[300%] animate-fullSpin; 
+  background-image: conic-gradient(var(--gradient-start), var(--gradient-end));
+}

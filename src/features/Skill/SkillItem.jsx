@@ -1,15 +1,17 @@
 export default function SkillItem({ skill }) {
   const { title, imgUrl, color } = skill;
 
+  // get dynamic styles from index.css file
+  // NOTE: **TailwindCSS doesn't allow you to generate classes dynamically**.
+  //        So use style to handle the problem instead
+  const dynamicStyles = {
+    '--gradient-start': 'black', // default starting color
+    '--gradient-end': color || 'white', // default white color if no color provided
+  };
+
   return (
-    // TODO: Change the className into a variable, and then assign to the className
     <li className="">
-      {console.log(
-        `relative flex h-full w-full flex-col  flex-wrap  items-center justify-around gap-5 rounded-3xl  py-8  before:absolute before:inset-1 before:z-10 before:rounded-3xl before:bg-slate-900 before:content-[''] after:absolute after:-top-full after:left-[-100%] after:h-[300%] after:w-[300%] after:animate-fullSpin  after:content-[''] after:bg-[conic-gradient(black,black,${color || "white"})] overflow-hidden`,
-      )}
-      <div
-        className={`relative flex h-full w-full flex-col  flex-wrap  items-center justify-around gap-5 rounded-3xl  py-8  before:absolute before:inset-1 before:z-10 before:rounded-3xl before:bg-slate-900 before:content-[''] after:absolute after:-top-full after:left-[-100%] after:h-[300%] after:w-[300%] after:animate-fullSpin  after:content-[''] after:bg-[conic-gradient(black,black,${color || "white"})] overflow-hidden`}
-      >
+      <div className="skill-item" style={dynamicStyles}>
         <img
           src={imgUrl}
           alt={title}
@@ -22,7 +24,3 @@ export default function SkillItem({ skill }) {
     </li>
   );
 }
-
-// after:bg-gradient-to-r  after:from-black after:via-black after:to-yellow-500
-
-//
