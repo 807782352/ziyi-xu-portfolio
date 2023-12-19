@@ -1,4 +1,4 @@
-import { useState, useTransition } from "react";
+import { useEffect, useState, useTransition } from "react";
 import SkillItem from "../features/Skill/SkillItem";
 import SectionHeader from "../ui/SectionHeader";
 import TabButton from "../ui/TabButton";
@@ -271,9 +271,12 @@ export default function Skill() {
         {SKILL_DATA.filter((item) =>
           item.categories.find((category) => category === tab),
         )?.map((el) => (
-          <SkillItem skill={el} key={el.id} />
+          // Reset the animation (little influence in small projects)
+          <SkillItem skill={el} key={tab + "-"+ el.id } />
         ))}
       </ul>
     </div>
   );
 }
+
+
