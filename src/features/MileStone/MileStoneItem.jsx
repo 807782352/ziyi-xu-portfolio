@@ -6,16 +6,16 @@ export default function MileStoneItem({ mileStoneItem, index }) {
 
   let containerStyle = "col-span-4 col-start-1";
   let borderStyle =
-    "rounded-2xl rounded-tr-none border-2 border-orange-400 bg-slate-900 px-5 py-5";
+    "rounded-2xl md:rounded-tr-none border-2 border-orange-400 bg-slate-900 px-5 py-5";
 
   if (index % 2 !== 0) {
     containerStyle = "col-span-4 col-start-6";
     borderStyle =
-      "rounded-2xl rounded-tl-none border-2 border-orange-400 bg-slate-900 px-5 py-5";
+      "rounded-2xl md:rounded-tl-none border-2 border-orange-400 bg-slate-900 px-5 py-5";
   }
 
   return (
-    <div className="grid grid-cols-9 px-2">
+    <div className="grid px-2 py-2 md:grid-cols-9 md:py-0">
       {/* right container style */}
       {index % 2 !== 0 && <VerticalLine imgUrl={imgUrl} />}
 
@@ -45,7 +45,7 @@ function VerticalLine({ imgUrl }) {
   return (
     <div
       id="vertical-timeline"
-      className="col-span-1 col-start-5 flex h-full w-full items-center justify-center"
+      className="hidden md:col-span-1 md:col-start-5 md:flex md:h-full md:w-full md:items-center md:justify-center"
     >
       <div className="h-full w-1 bg-orange-400"></div>
       <div
