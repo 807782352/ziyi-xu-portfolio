@@ -18,14 +18,14 @@ export default function NavBar() {
       id: "2",
     },
     {
+      url: "#milestone",
+      title: "Milestone",
+      id: "4",
+    },
+    {
       url: "#project",
       title: "Project",
       id: "3",
-    },
-    {
-      url: "#education",
-      title: "Education",
-      id: "4",
     },
     {
       url: "#activity",
@@ -44,8 +44,8 @@ export default function NavBar() {
   return (
     // fixed the navbar during window scrolling
     <nav
-      className={` container z-[9999]
-    fixed left-0 right-0 top-0 z-10 mx-auto bg-slate-900 px-8 py-5 ${
+      className={` container fixed
+    left-0 right-0 top-0 z-10 z-[9999] mx-auto bg-slate-900 px-8 py-5 ${
       navbarOpen ? "rounded-[44px] opacity-100" : "rounded-full opacity-90"
     } `}
     >
@@ -53,8 +53,10 @@ export default function NavBar() {
         className="   flex  
       items-center justify-between  text-slate-100 "
       >
-        <Link to="/">
-          <span className="text-xl md:text-2xl lg:text-3xl font-extrabold">Logo</span>
+        <Link to="/#home">
+          <span className="text-xl font-extrabold md:text-2xl lg:text-3xl">
+            Logo
+          </span>
         </Link>
 
         <div className="mobile-menu md:hidden">

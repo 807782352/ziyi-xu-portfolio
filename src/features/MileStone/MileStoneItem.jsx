@@ -24,13 +24,13 @@ export default function MileStoneItem({ mileStoneItem, index }) {
         <div id="text-box" className={borderStyle}>
           <h2 className="text-xl font-bold ">{title}</h2>
           <span className="px-1 text-sm italic text-slate-300">📍 {venue}</span>
-          <p className="mt-2 px-6 text-left text-slate-200">
+          <div className="mt-2 px-6 text-left text-slate-200">
             <ul className="list-disc">
               {strList.map((strItem, index) => (
                 <li key={index}>{strItem}</li>
               ))}
             </ul>
-          </p>
+          </div>
         </div>
       </div>
 

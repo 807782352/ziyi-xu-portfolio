@@ -1,4 +1,4 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import AppLayout from "./ui/AppLayout";
 import Error from "./ui/Error";
 import About from "./pages/About";
@@ -8,45 +8,35 @@ import Project from "./pages/Project";
 import Activity from "./pages/Activity";
 import Contact from "./pages/Contact";
 import MileStone from "./pages/Milestone";
+import NavBar from "./pages/NavBar";
+import { useEffect } from "react";
 
 export default function App() {
-  const router = createBrowserRouter([
-    {
-      element: <AppLayout />,
-      errorElement: <Error />,
+  return (
+    <Router>
+      <NavBar />
 
-      children: [
-        {
-          path: "/",
-          element: <Home />,
-        },
-        {
-          path: "/about",
-          element: <About />,
-        },
-        {
-          path: "/skill",
-          element: <Skill />,
-        },
-        {
-          path: "/project",
-          element: <Project />,
-        },
-        {
-          path: "/milestone",
-          element: <MileStone />,
-        },
-        {
-          path: "/activity",
-          element: <Activity />,
-        },
-        {
-          path: "/contact",
-          element: <Contact />,
-        },
-      ],
-    },
-  ]);
+      <Routes>
+        <Route path="/" exact element={<HomeWithScroll />} />
+      </Routes>
 
-  return <RouterProvider router={router} />;
+    </Router>
+  );
+}
+
+function HomeWithScroll() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const hash = location.hash;
+    if (hash) {
+      const element = document.getElementById(hash.replace('#', ''));
+      if (element) {
+        
+        element.scrollIntoView({behavior: 'smooth' });
+      }
+    }
+  }, [location]); // depends on location to make sure rerender every time the URL changes
+
+  return <Home />;
 }

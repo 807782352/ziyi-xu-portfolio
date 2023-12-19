@@ -1,4 +1,3 @@
-import React from "react";
 import NavLinkItem from "./NavLinkItem";
 
 export default function MenuOverlay({ menuItems }) {

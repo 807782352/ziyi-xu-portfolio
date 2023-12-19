@@ -252,7 +252,7 @@ export default function Skill() {
   };
 
   return (
-    <div className="container w-10/12 mx-auto mt-32">
+    <div className="container w-10/12 mx-auto mt-32" id="skill">
       <SectionHeader title="skills" subtitle="A list of my skills and tools" />
 
       <div className="mt-24 flex items-center justify-start space-x-4">

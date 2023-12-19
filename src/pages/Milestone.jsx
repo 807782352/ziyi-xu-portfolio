@@ -47,7 +47,7 @@ const MILESTONE_DATA = [
 
 export default function MileStone() {
   return (
-    <section className="container mx-auto mt-32 w-10/12 text-white ">
+    <section className="container mx-auto mt-32 w-10/12 text-white " id="milestone">
       <SectionHeader
         title="MileStone"
         subtitle="Significant milestones in my life to date"

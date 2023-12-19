@@ -21,9 +21,6 @@ export default function AppLayout() {
   return (
     <div className="overflow-auto">
       <NavBar />
-      <main>
-        <Outlet />
-      </main>
     </div>
   );
 }
