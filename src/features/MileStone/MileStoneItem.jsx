@@ -24,7 +24,7 @@ export default function MileStoneItem({ mileStoneItem, index }) {
         >
           <div className="h-full w-1 bg-orange-400"></div>
           <div
-            className="absolute z-10 h-16 w-16 rounded-full border-2 border-orange-400 bg-white bg-contain bg-center bg-no-repeat"
+            className="absolute z-10 h-16 w-16 rounded-full border-2 border-orange-400 bg-white bg-contain bg-center bg-no-repeat hover:scale-150 transition ease-in-out delay-300 duration-300"
             style={{ backgroundImage: `url(${imgUrl})` }}
           ></div>
         </div>
@@ -54,7 +54,7 @@ export default function MileStoneItem({ mileStoneItem, index }) {
         >
           <div className="h-full w-1 bg-orange-400"></div>
           <div
-            className="absolute z-10 h-16 w-16 rounded-full border-2 border-orange-400 bg-white bg-contain bg-center bg-no-repeat"
+            className="absolute z-10 h-16 w-16 rounded-full border-2 border-orange-400 bg-white bg-contain bg-center bg-no-repeat hover:scale-150 transition ease-in-out delay-300 duration-300"
             style={{ backgroundImage: `url(${imgUrl})` }}
           ></div>
         </div>
