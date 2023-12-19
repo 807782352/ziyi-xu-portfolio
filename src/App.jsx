@@ -5,9 +5,9 @@ import About from "./pages/About";
 import Skill from "./pages/Skill";
 import Home from "./pages/Home";
 import Project from "./pages/Project";
-import Education from "./pages/Education";
 import Activity from "./pages/Activity";
 import Contact from "./pages/Contact";
+import MileStone from "./pages/Milestone";
 
 export default function App() {
   const router = createBrowserRouter([
@@ -33,8 +33,8 @@ export default function App() {
           element: <Project />,
         },
         {
-          path: "/education",
-          element: <Education />,
+          path: "/milestone",
+          element: <MileStone />,
         },
         {
           path: "/activity",

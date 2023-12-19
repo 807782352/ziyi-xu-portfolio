@@ -5,28 +5,12 @@ import TabButton from "../ui/TabButton";
 
 const SKILL_DATA = [
   {
-    title: "Python",
-    imgUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/640px-Python-logo-notext.svg.png",
-    categories: ["all", "language", "machine-learning", "frontend"],
-    id: "001",
-    color: "#3d83b9",
-  },
-  {
     title: "Java",
     imgUrl:
       "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/181_Java_logo_logos-512.png",
     categories: ["all", "language", "backend"],
     id: "002",
     color: "#ffa71f",
-  },
-  {
-    title: "React",
-    imgUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
-    categories: ["all", "library", "frontend"],
-    id: "003",
-    color: "#6af1ff",
   },
   {
     title: "JavaScript",
@@ -37,12 +21,12 @@ const SKILL_DATA = [
     color: "#fff155",
   },
   {
-    title: "Vue",
+    title: "Python",
     imgUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/640px-Vue.js_Logo_2.svg.png",
-    categories: ["all", "library", "frontend"],
-    id: "005",
-    color: "#45cc90",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/640px-Python-logo-notext.svg.png",
+    categories: ["all", "language", "machine-learning", "frontend"],
+    id: "001",
+    color: "#3d83b9",
   },
   {
     title: "C++",
@@ -52,6 +36,40 @@ const SKILL_DATA = [
     id: "006",
     color: "#70a9e7",
   },
+  {
+    title: "HTML",
+    imgUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/1024px-HTML5_Badge.svg.png",
+    categories: ["all", "language", "frontend"],
+    id: "010",
+    color: "#fa572a",
+  },
+  {
+    title: "CSS",
+    imgUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/240px-CSS3_logo.svg.png",
+    categories: ["all", "language", "frontend"],
+    id: "011",
+    color: "#2453fb",
+  },
+  {
+    title: "React",
+    imgUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
+    categories: ["all", "library", "frontend"],
+    id: "003",
+    color: "#6af1ff",
+  },
+
+  {
+    title: "Vue",
+    imgUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/640px-Vue.js_Logo_2.svg.png",
+    categories: ["all", "library", "frontend"],
+    id: "005",
+    color: "#45cc90",
+  },
+
   {
     title: "MySQL",
     imgUrl:
@@ -75,22 +93,7 @@ const SKILL_DATA = [
     id: "009",
     color: "#ff5838",
   },
-  {
-    title: "HTML",
-    imgUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/1024px-HTML5_Badge.svg.png",
-    categories: ["all", "language", "frontend"],
-    id: "010",
-    color: "#fa572a",
-  },
-  {
-    title: "CSS",
-    imgUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/240px-CSS3_logo.svg.png",
-    categories: ["all", "language", "frontend"],
-    id: "011",
-    color: "#2453fb",
-  },
+
   {
     title: "SpringBoot",
     imgUrl:
@@ -249,7 +252,7 @@ export default function Skill() {
   };
 
   return (
-    <div className="container mx-auto mt-32">
+    <div className="container w-10/12 mx-auto mt-32">
       <SectionHeader title="skills" subtitle="A list of my skills and tools" />
 
       <div className="mt-24 flex items-center justify-start space-x-4">

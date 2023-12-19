@@ -85,7 +85,7 @@ export default function About() {
   const handleTabChange = (id) => setTab(id);
 
   return (
-    <section className="container mx-auto mt-20 text-white">
+    <section className="container  mx-auto mt-20 text-white">
       <SectionHeader
         title="About Me"
         subtitle="A breif intro at my journey in tech"
