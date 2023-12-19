@@ -2,7 +2,6 @@ export default function MileStoneItem({ mileStoneItem, index }) {
   const { time, title, venue, content, imgUrl } = mileStoneItem;
 
   const strList = content.split("\n");
-  console.log(strList);
 
   let containerStyle = "col-span-4 col-start-1";
   let borderStyle =
@@ -49,7 +48,7 @@ function VerticalLine({ imgUrl }) {
     >
       <div className="h-full w-1 bg-orange-400"></div>
       <div
-        className="absolute z-10 h-16 w-16 rounded-full border-2 border-orange-400 bg-white bg-contain bg-center bg-no-repeat transition delay-300 duration-300 ease-in-out hover:scale-150"
+        className="absolute z-10 h-16 w-16 rounded-full border-2 border-orange-400 bg-white bg-contain bg-center bg-no-repeat transition delay-300 duration-300 ease-in-out hover:scale-150 max-lg:hidden"
         style={{ backgroundImage: `url(${imgUrl})` }}
       ></div>
     </div>
