@@ -1,6 +1,7 @@
 import About from "./About";
 import HeroSection from "./HeroSection";
 import MileStone from "./Milestone";
+import Project from "./Project";
 import Skill from "./Skill";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
         <About />
         <Skill />
         <MileStone/>
+        <Project />
       </div>
     </main>
   );

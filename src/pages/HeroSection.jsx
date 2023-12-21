@@ -30,7 +30,7 @@ export default function HeroSection() {
               wrapper="span"
               style={{ fontSize: "0.8em" }}
               speed={20}
-              repeat={0}
+              repeat={1}
             />
           </h1>
           <p className=" text-lg text-slate-300 md:text-lg lg:text-xl">
