@@ -16,7 +16,8 @@ const PROJECTS_DATA = [
     title: "popcorn-movie",
     imgUrl: "/images/project-movie.png",
     repoUrl: "https://github.com/807782352/popcorn-movie",
-    demoUrl: "https://popcorn-movie-odlvp2jkd-807782352s-projects.vercel.app/",
+    demoUrl: "https://popcorn-movie-eight.vercel.app/",
+    techs: ["JavaScript", "React", "CSS", "HTML"],
     description:
       "Project learned and developed from Jonas Schmedtmann in his bootcamp: The Ultimate React Course 2024: React, Redux & More",
   },
@@ -25,6 +26,7 @@ const PROJECTS_DATA = [
     imgUrl: "/images/project-react-quiz.png",
     repoUrl: "https://github.com/807782352/react-quiz",
     demoUrl: "https://react-quiz-three-neon.vercel.app/",
+    techs: ["JavaScript", "React", "CSS", "HTML", "React Context"],
     description:
       "Project learned and developed from Jonas Schmedtmann in his bootcamp: The Ultimate React Course 2024: React, Redux & More",
   },
@@ -33,6 +35,14 @@ const PROJECTS_DATA = [
     imgUrl: "/images/project-pizza.png",
     repoUrl: "https://github.com/807782352/fast-react-pizza",
     demoUrl: "https://fast-react-pizza-chi.vercel.app/",
+    techs: [
+      "JavaScript",
+      "React",
+      "React Router",
+      "React Redux",
+      "Tailwind CSS",
+      "HTML",
+    ],
     description:
       "Project learned and developed from Jonas Schmedtmann in his bootcamp: The Ultimate React Course 2024: React, Redux & More",
   },
@@ -41,6 +51,7 @@ const PROJECTS_DATA = [
     imgUrl: "/images/project-worldwise.png",
     repoUrl: "https://github.com/807782352/react-worldwise",
     demoUrl: "https://react-worldwise-rosy.vercel.app/",
+    techs: ["JavaScript", "React", "Tailwind CSS", "HTML", "React Context"],
     description:
       "Project learned and developed from Jonas Schmedtmann in his bootcamp: The Ultimate React Course 2024: React, Redux & More",
   },
@@ -50,6 +61,17 @@ const PROJECTS_DATA = [
     repoUrl:
       "https://github.com/807782352/Codes_Projects/tree/main/Tripedia-main",
     demoUrl: "",
+    techs: [
+      "JavaScript",
+      "React",
+      "CSS",
+      "HTML",
+      "MaterialUI",
+      "Java",
+      "SpringBoot",
+      "MySQL",
+      "AWS",
+    ],
     description:
       "Project designed and developed by a group of 6 in course ECE650 at the University of Waterloo.",
   },
@@ -76,7 +98,11 @@ export default function Project() {
             modifier: 1,
             slideShadows: true,
           }}
-          pagination={{ dynamicBullets: true, clickable: true, el: '.custom-pagination' }}
+          pagination={{
+            dynamicBullets: true,
+            clickable: true,
+            el: ".custom-pagination",
+          }}
           className="swiper_container"
           navigation={{
             prevEl: ".left-button",
@@ -99,7 +125,7 @@ export default function Project() {
             </SwiperSlide>
           ))}
 
-          <div className="slider-controller flex justify-around items-center">
+          <div className="slider-controller flex items-center justify-around">
             <div className="left-button">
               <Button type="left" />
             </div>
