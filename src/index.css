@@ -32,3 +32,23 @@
   @apply -top-full left-[-100%] h-[300%] w-[300%] animate-fullSpin; 
   background-image: conic-gradient(var(--gradient-start), var(--gradient-end));
 }
+
+
+/* Swiper styling*/
+
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+  background:  rgb(251 146 60);
+}
+
+/* eliminate the default transformX(-50) */
+.custom-pagination.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic  {
+  transform: translateX(0); 
+}

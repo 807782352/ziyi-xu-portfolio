@@ -1,5 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
-import myImage from "/public/images/self-image.jpg";
+import myImage from "/images/self-image.jpg";
 import Button from "../ui/Button";
 import DownloadButton from "../ui/DownloadButton";
 
@@ -45,10 +45,8 @@ export default function HeroSection() {
 
           <div className="mt-4 sm:flex lg:mt-6">
             <Button type="primary-full">Hire Me</Button>
-            <Button type="horrow">
-              <span className="block rounded-full bg-black px-5 py-2">
-                <DownloadButton />
-              </span>
+            <Button type="horrow-full">
+              <DownloadButton />
             </Button>
           </div>
         </div>

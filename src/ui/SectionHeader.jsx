@@ -6,7 +6,7 @@ export default function SectionHeader({ title, subtitle }) {
           {title}
         </span>
       </h2>
-      <h3 className="mt-4 text-center font-bold text-slate-300">{subtitle}</h3>
+      <h3 className="mt-4 mb-16 text-center font-bold text-slate-300">{subtitle}</h3>
     </>
   );
 }
