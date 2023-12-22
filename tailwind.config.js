@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       animation: {
-        fullSpin : "fullSpin 5s linear infinite",
+        fullSpin: "fullSpin 5s linear infinite",
       },
       keyframes: {
         fullSpin: {
@@ -13,6 +13,9 @@ export default {
           },
         },
       },
+    },
+    fontFamily: {
+      sans: ["Roboto", "sans-serif"],
     },
   },
   plugins: [],
