@@ -7,7 +7,7 @@ import Skill from "./Skill";
 export default function Home() {
   return (
     <main className=" flex min-h-screen flex-col bg-slate-950" id="home">
-      <div className="container mx-auto px-6 py-20 flex flex-col justify-around items-center gap-[100px]">
+      <div className="container mx-auto px-6 py-20 flex flex-col justify-around items-center gap-[100px] mt-[100px]">
         <HeroSection />
         <About />
         <Skill />
