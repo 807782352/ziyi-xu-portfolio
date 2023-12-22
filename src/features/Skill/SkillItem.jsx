@@ -15,7 +15,7 @@ export default function SkillItem({ skill }) {
         <img
           src={imgUrl}
           alt={title}
-          className="z-20 h-20 w-auto brightness-110"
+          className="z-20 h-10 lg:h-20 w-auto brightness-110"
         />
         <span className="z-20 text-center text-base font-bold leading-tight text-slate-100 md:text-sm lg:text-lg">
           {title}
