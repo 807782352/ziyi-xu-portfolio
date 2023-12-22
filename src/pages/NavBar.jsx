@@ -94,7 +94,7 @@ export default function NavBar() {
         )}
 
         <div className="hidden lg:block ">
-          <Button type="primary">
+          <Button type="primary-slate-800">
             <DownloadButton />
           </Button>
         </div>
