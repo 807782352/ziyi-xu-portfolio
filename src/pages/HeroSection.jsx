@@ -43,7 +43,7 @@ export default function HeroSection() {
             <span className="highlight">front-end</span> development.
           </p>
 
-          <div className="mt-4 sm:flex lg:mt-6">
+          <div className="mt-4 sm:flex lg:mt-6 mr-6">
             <Button type="primary-full">Hire Me</Button>
             <Button type="horrow-full">
               <DownloadButton />
