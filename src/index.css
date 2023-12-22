@@ -8,34 +8,32 @@
   }
 
   .highlight {
-    @apply hover:yellow-red font-extrabold hover:rounded-full hover:px-2 hover:py-0.5 hover:text-black;
+    @apply hover:yellow-red font-extrabold hover:rounded-full hover:px-2 hover:py-0.5 hover:text-black transition ease-in-out duration-300;
   }
 }
 
 /* use for dynamic border in SkillItem */
 .skill-item {
-  @apply relative flex h-full w-full flex-col flex-wrap items-center justify-around gap-5 rounded-3xl py-8 overflow-hidden;
+  @apply relative flex h-full w-full flex-col flex-wrap items-center justify-around gap-5 overflow-hidden rounded-3xl py-8;
   position: relative;
 }
 
 .skill-item::before,
 .skill-item::after {
-  content: '';
+  content: "";
   position: absolute;
 }
 
 .skill-item::before {
-  @apply inset-1 z-10 rounded-3xl bg-slate-900; 
+  @apply inset-1 z-10 rounded-3xl bg-slate-900;
 }
 
 .skill-item::after {
-  @apply -top-full left-[-100%] h-[300%] w-[300%] animate-fullSpin; 
+  @apply -top-full left-[-100%] h-[300%] w-[300%] animate-fullSpin;
   background-image: conic-gradient(var(--gradient-start), var(--gradient-end));
 }
 
-
 /* Swiper styling*/
-
 
 .swiper-pagination-bullet {
   width: 16px;
@@ -45,10 +43,18 @@
 }
 
 .swiper-pagination-bullet-active {
-  background:  rgb(251 146 60);
+  background: rgb(251 146 60);
 }
 
 /* eliminate the default transformX(-50) */
-.custom-pagination.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic  {
-  transform: translateX(0); 
+.custom-pagination.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  transform: translateX(0);
+}
+
+/* custom-font */
+@font-face {
+  font-family: "Maoti";
+  src: url("./fonts/maoti.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }

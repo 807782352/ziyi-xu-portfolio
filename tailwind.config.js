@@ -16,6 +16,7 @@ export default {
     },
     fontFamily: {
       sans: ["Roboto", "sans-serif"],
+      maoti: ["Maoti", "sans-serif"],
     },
   },
   plugins: [],

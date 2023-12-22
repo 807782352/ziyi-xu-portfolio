@@ -54,8 +54,8 @@ export default function NavBar() {
       items-center justify-between  text-slate-100 "
       >
         <Link to="/#home">
-          <span className="text-xl font-extrabold md:text-2xl lg:text-3xl">
-            Logo
+          <span className="font-maoti yellow-red  bg-clip-text text-3xl text-transparent md:text-[36px] lg:text-[48px]">
+            熠
           </span>
         </Link>
 

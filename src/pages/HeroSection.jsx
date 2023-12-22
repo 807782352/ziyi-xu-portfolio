@@ -6,11 +6,11 @@ import DownloadButton from "../ui/DownloadButton";
 export default function HeroSection() {
   return (
     <section>
-      <div className="mt-20 grid grid-cols-1 lg:grid-cols-12">
+      <div className="mt-28 grid grid-cols-1 lg:grid-cols-12">
         <div className="lg:col-span-8 lg:place-self-start ">
           <h1 className="mb-6 text-5xl  font-extrabold text-slate-100 lg:text-6xl">
             <span className="yellow-red bg-clip-text text-transparent">
-              Hello, I'm{" "}
+              Hello, I'm
             </span>
             <br />
             <TypeAnimation
