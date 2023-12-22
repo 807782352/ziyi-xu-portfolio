@@ -255,7 +255,7 @@ export default function Skill() {
     <div className="container w-10/12 mx-auto mt-32" id="skill">
       <SectionHeader title="skills" subtitle="A list of my skills and tools" />
 
-      <div className="mt-24 flex items-center justify-start space-x-4">
+      <div className="mt-24 flex items-center justify-start gap-4 flex-wrap">
         {SKILL_TAB.map((item) => (
           <TabButton
             key={item.id}
