@@ -54,7 +54,7 @@ export default function NavBar() {
       items-center justify-between  text-slate-100 "
       >
         <Link to="/#home">
-          <span className="font-maoti yellow-red  bg-clip-text text-3xl text-transparent md:text-[36px] lg:text-[48px]">
+          <span className="yellow-red bg-clip-text  font-maoti text-3xl text-transparent md:text-[36px] lg:text-[48px]">
             熠
           </span>
         </Link>
@@ -79,7 +79,7 @@ export default function NavBar() {
 
         {!navbarOpen && (
           <div className="menu hidden md:block">
-            <ul className="flex items-center p-4 uppercase md:flex-row md:space-x-2  md:p-0 ">
+            <ul className=" flex items-center px-4 uppercase md:flex-row md:space-x-2  md:p-0 ">
               {navLinks.map((item) => {
                 return (
                   <NavLinkItem
