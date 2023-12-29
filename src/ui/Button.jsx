@@ -1,6 +1,4 @@
 export default function Button({ type, children, onClick, addClass }) {
-  console.log(onClick);
-
   const BASE_COLOR_STYLE =
     "yellow-red rounded-full font-bold cursor-pointer ";
 

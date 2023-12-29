@@ -79,7 +79,7 @@ const PROJECTS_DATA = [
 
 export default function Project() {
   return (
-    <div className="container mx-auto mt-32 w-10/12 " id="project">
+    <div className="container mx-auto mt-32 " id="project">
       <SectionHeader
         title="Project"
         subtitle="A list of projects I studied or worked on"
