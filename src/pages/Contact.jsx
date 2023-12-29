@@ -56,7 +56,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="container mx-auto text-white">
+    <div className="container mx-auto text-white" id="contact">
       <SectionHeader
         title="Contact Me"
         subtitle="Feel free to email or text me"

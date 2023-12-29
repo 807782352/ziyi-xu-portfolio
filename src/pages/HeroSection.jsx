@@ -2,8 +2,15 @@ import { TypeAnimation } from "react-type-animation";
 import myImage from "/images/self-image.jpg";
 import Button from "../ui/Button";
 import DownloadButton from "../ui/DownloadButton";
+import { useNavigate } from "react-router-dom";
 
 export default function HeroSection() {
+  const navigate = useNavigate();
+
+  const handleNavigate = (url) => {
+    navigate(`/${url}`);
+  };
+
   return (
     <section>
       <div className="mt-28 grid grid-cols-1 lg:grid-cols-12">
@@ -43,8 +50,13 @@ export default function HeroSection() {
             <span className="highlight">front-end</span> development.
           </p>
 
-          <div className="mt-4 sm:flex lg:mt-6 mr-6">
-            <Button type="primary-full">Hire Me</Button>
+          <div className="mr-6 mt-4 sm:flex lg:mt-6">
+            <Button
+              type="primary-full"
+              onClick={() => handleNavigate("#contact")}
+            >
+              Hire Me
+            </Button>
             <Button type="horrow-full">
               <DownloadButton />
             </Button>
