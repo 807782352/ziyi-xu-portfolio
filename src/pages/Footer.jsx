@@ -14,21 +14,21 @@ export default function Footer() {
           <Link to="https://www.facebook.com/ziyi.xu.144/" target="_blank">
             <img
               className={ICONS_STYLE}
-              src="public/svg/icons8-facebook.svg"
+              src="/svg/icons8-facebook.svg"
               alt="facebook logo"
             />
           </Link>
           <Link to="https://github.com/807782352" target="_blank">
             <img
               className={ICONS_STYLE}
-              src="public/svg/icons8-github.svg"
+              src="/svg/icons8-github.svg"
               alt="github logo"
             />
           </Link>
           <Link to="https://www.linkedin.com/in/ziyi-xu/" target="_blank">
             <img
               className={ICONS_STYLE}
-              src="public/svg/icons8-linkedin.svg"
+              src="/svg/icons8-linkedin.svg"
               alt="linkedin logo"
             />
           </Link>

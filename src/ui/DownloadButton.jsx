@@ -1,4 +1,4 @@
-import MyResume from "/public/resume/ZiyiXuResume.pdf";
+import MyResume from "/resume/ZiyiXuResume.pdf";
 
 export default function DownloadButton() {
   return (
