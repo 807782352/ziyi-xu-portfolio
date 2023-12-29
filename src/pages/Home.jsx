@@ -5,6 +5,7 @@ import MileStone from "./Milestone";
 import Project from "./Project";
 import Skill from "./Skill";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Project />
         {/* <Activity /> */}
         <Contact />
+        <Footer />
       </div>
     </main>
   );

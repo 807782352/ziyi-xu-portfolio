@@ -252,8 +252,8 @@ export default function Skill() {
   };
 
   return (
-    <div className="container mx-auto mt-32" id="skill">
-      <SectionHeader title="skills" subtitle="A list of my skills and tools" />
+    <div className="container mx-auto mt-32">
+      <SectionHeader title="skills" subtitle="A list of my skills and tools"  id="skill"/>
 
       <div className="mt-24 flex items-center justify-start gap-4 flex-wrap">
         {SKILL_TAB.map((item) => (

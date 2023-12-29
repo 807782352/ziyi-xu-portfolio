@@ -85,10 +85,11 @@ export default function About() {
   const handleTabChange = (id) => setTab(id);
 
   return (
-    <section id="about" className="container  mx-auto mt-20 text-white">
+    <section className="container  mx-auto mt-20 text-white">
       <SectionHeader
         title="About Me"
         subtitle="A breif intro at my journey in tech"
+        id="about"
       />
 
       <div className="grid grid-flow-row place-items-center gap-4 md:mt-16 md:grid-cols-12 md:grid-rows-none  md:place-items-start">

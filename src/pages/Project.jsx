@@ -79,10 +79,11 @@ const PROJECTS_DATA = [
 
 export default function Project() {
   return (
-    <div className="container mx-auto mt-32 " id="project">
+    <div className="container mx-auto mt-32 " >
       <SectionHeader
         title="Project"
         subtitle="A list of projects I studied or worked on"
+        id="project"
       />
 
       <div className="mt-16">

@@ -56,10 +56,11 @@ export default function Contact() {
   };
 
   return (
-    <div className="container mx-auto text-white" id="contact">
+    <div className="container mx-auto text-white" >
       <SectionHeader
         title="Contact Me"
         subtitle="Feel free to email or text me"
+        id="contact"
       />
 
       <div className="contact-area flex flex-col gap-4 lg:grid lg:grid-cols-12 lg:gap-0">
