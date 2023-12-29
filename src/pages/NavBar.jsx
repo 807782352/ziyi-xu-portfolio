@@ -46,7 +46,7 @@ export default function NavBar() {
     <nav
       className={` container fixed
     left-0 right-0 top-0 z-10 z-[9999] mx-auto bg-slate-900 px-8 py-5 ${
-      navbarOpen ? "rounded-[44px] opacity-100" : "rounded-full opacity-90"
+      navbarOpen ? "rounded-[44px] opacity-100 rounded-t-none" : "rounded-[28px] opacity-90 rounded-t-none"
     } `}
     >
       <div
@@ -54,7 +54,7 @@ export default function NavBar() {
       items-center justify-between  text-slate-100 "
       >
         <Link to="/#home">
-          <span className="yellow-red bg-clip-text  font-maoti text-3xl text-transparent md:text-[36px] lg:text-[48px]">
+          <span className="yellow-red bg-clip-text  font-maoti text-[48px] text-transparent md:text-[40px] lg:text-[48px]">
             熠
           </span>
         </Link>
@@ -72,7 +72,7 @@ export default function NavBar() {
               onClick={() => setNavbarOpen(true)}
               className="flex items-center rounded px-3 py-3 text-slate-200 hover:border hover:border-white hover:text-white "
             >
-              <span className="material-symbols-outlined ">menu</span>
+              <span className="material-symbols-outlined text-[48px]">menu</span>
             </button>
           )}
         </div>
