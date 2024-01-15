@@ -1,26 +1,43 @@
-import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
-import AppLayout from "./ui/AppLayout";
-import Error from "./ui/Error";
-import About from "./pages/About";
-import Skill from "./pages/Skill";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 import Home from "./pages/Home";
-import Project from "./pages/Project";
-import Activity from "./pages/Activity";
-import Contact from "./pages/Contact";
-import MileStone from "./pages/Milestone";
 import NavBar from "./pages/NavBar";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import PreLoading from "./pages/PreLoading";
 
 export default function App() {
+  const DELAY = 3000;
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    if (isLoading) {
+      document.body.style.overflow = "hidden";
+    }
+    const timerId = setTimeout(() => setIsLoading(false), DELAY);
+
+    // clear timerId
+    return () => {
+      document.body.style.overflow = "auto";
+      clearTimeout(timerId);
+    };
+  }, [isLoading]);
+
   return (
-    <Router>
-      <NavBar />
+    <div>
+      <PreLoading isLoading={isLoading} />
+      <Router>
+        <NavBar />
 
-      <Routes>
-        <Route path="/" exact element={<HomeWithScroll />} />
-      </Routes>
-
-    </Router>
+        <Routes>
+          <Route path="/" exact element={<HomeWithScroll />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
@@ -30,10 +47,9 @@ function HomeWithScroll() {
   useEffect(() => {
     const hash = location.hash;
     if (hash) {
-      const element = document.getElementById(hash.replace('#', ''));
+      const element = document.getElementById(hash.replace("#", ""));
       if (element) {
-        
-        element.scrollIntoView({behavior: 'smooth' });
+        element.scrollIntoView({ behavior: "smooth" });
       }
     }
   }, [location]); // depends on location to make sure rerender every time the URL changes

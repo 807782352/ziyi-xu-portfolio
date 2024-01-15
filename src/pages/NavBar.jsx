@@ -45,7 +45,7 @@ export default function NavBar() {
     // fixed the navbar during window scrolling
     <nav
       className={` container fixed
-    left-0 right-0 top-0 z-10 z-[9999] mx-auto bg-slate-900 px-8 py-2 ${
+    left-0 right-0 top-0 z-[9990] mx-auto bg-slate-900 px-8 py-2 ${
       navbarOpen ? "rounded-lg opacity-100 rounded-t-none" : "rounded-[28px] opacity-90 rounded-t-none"
     } `}
     >
