@@ -75,6 +75,23 @@ const PROJECTS_DATA = [
     description:
       "Project designed and developed by a group of 6 in course ECE650 at the University of Waterloo.",
   },
+  {
+    title: "redux-shopping",
+    imgUrl: "/images/project-redux-shopping.png",
+    repoUrl:
+      "https://github.com/807782352/redux-shopping",
+    demoUrl: "https://redux-shopping-beta.vercel.app/",
+    techs: [
+      "JavaScript",
+      "React",
+      "CSS",
+      "HTML",
+      "BootStrap",
+      "React-Redux",
+    ],
+    description:
+      "This project is primarily focused on learning Redux, and is based on the video at https://www.youtube.com/watch?v=A_vRvDAZuOo. It involves building and expanding upon the functionality presented in the video.",
+  },
 ];
 
 export default function Project() {
