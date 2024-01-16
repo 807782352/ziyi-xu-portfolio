@@ -71,6 +71,7 @@ const PROJECTS_DATA = [
       "SpringBoot",
       "MySQL",
       "AWS",
+      "Leaflet"
     ],
     description:
       "Project designed and developed by a group of 6 in course ECE650 at the University of Waterloo.",
@@ -91,6 +92,23 @@ const PROJECTS_DATA = [
     ],
     description:
       "This project is primarily focused on learning Redux, and is based on the video at https://www.youtube.com/watch?v=A_vRvDAZuOo. It involves building and expanding upon the functionality presented in the video.",
+  },
+  {
+    title: "mec-covid-tracker",
+    imgUrl: "/images/project-covid-tracker.png",
+    repoUrl:
+      "https://github.com/807782352/mec-covid-tracker-restored",
+    demoUrl: "https://mec-covid-tracker-restored.vercel.app/",
+    techs: [
+      "JavaScript",
+      "React",
+      "CSS",
+      "HTML",
+      "MaterialUI",
+      "Leaflet"
+    ],
+    description:
+      "This is a restoration of our previous second-prize-winning project in the MEC competition (the original code was damaged). The project's purpose is to monitor COVID globally in real-time, presenting data through images and tables. The data source is https://disease.sh/.",
   },
 ];
 
