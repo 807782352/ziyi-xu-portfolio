@@ -13,6 +13,55 @@ import Button from "../ui/Button";
 
 const PROJECTS_DATA = [
   {
+    title: "tripedia",
+    imgUrl: "/images/project-tripedia.png",
+    repoUrl:
+      "https://github.com/807782352/Codes_Projects/tree/main/Tripedia-main",
+    demoUrl: "",
+    techs: [
+      "JavaScript",
+      "React",
+      "CSS",
+      "HTML",
+      "MaterialUI",
+      "Java",
+      "SpringBoot",
+      "MySQL",
+      "AWS",
+      "Leaflet",
+    ],
+    description:
+      "Project designed and developed by a group of 6 in course ECE650 at the University of Waterloo.",
+  },
+
+  {
+    title: "mec-covid-tracker",
+    imgUrl: "/images/project-covid-tracker.png",
+    repoUrl: "https://github.com/807782352/mec-covid-tracker-restored",
+    demoUrl: "https://mec-covid-tracker-restored.vercel.app/",
+    techs: ["JavaScript", "React", "CSS", "HTML", "MaterialUI", "Leaflet"],
+    description:
+      "This is a restoration of our previous second-prize-winning project in the MEC competition (the original code was damaged). The project's purpose is to monitor COVID globally in real-time, presenting data through images and tables. The data source is https://disease.sh/.",
+  },
+  {
+    title: "reggie-takeout",
+    imgUrl: "/images/project-reggie.png",
+    repoUrl: "https://github.com/807782352/reggie_food_delivery",
+    demoUrl: "",
+    techs: [
+      "Vue",
+      "Java",
+      "JavaScript",
+      "SpringBoot",
+      "MyBatis-Plus",
+      "SSM",
+      "MySQL",
+      "Maven",
+    ],
+    description:
+      "Based on the video, the project involves the creation of a full-stack design for the Reggie Takeaway backend, focusing on a comprehensive web application that includes both a customer-facing delivery interface and a backend management system. The primary technology stack utilized includes Java, SpringBoot, and Mybatis. This project showcases the development of a sophisticated food delivery platform, integrating client-side functionalities with an administrative backend, leveraging the strengths of these technologies to create a seamless and efficient user experience. The design and implementation of this project demonstrate a deep understanding of full-stack development, from front-end user interaction to backend data management and server-side logic. Video source: https://www.bilibili.com/video/BV13a411q753",
+  },
+  {
     title: "popcorn-movie",
     imgUrl: "/images/project-movie.png",
     repoUrl: "https://github.com/807782352/popcorn-movie",
@@ -56,65 +105,19 @@ const PROJECTS_DATA = [
       "Project learned and developed from Jonas Schmedtmann in his bootcamp: The Ultimate React Course 2024: React, Redux & More",
   },
   {
-    title: "tripedia",
-    imgUrl: "/images/project-tripedia.png",
-    repoUrl:
-      "https://github.com/807782352/Codes_Projects/tree/main/Tripedia-main",
-    demoUrl: "",
-    techs: [
-      "JavaScript",
-      "React",
-      "CSS",
-      "HTML",
-      "MaterialUI",
-      "Java",
-      "SpringBoot",
-      "MySQL",
-      "AWS",
-      "Leaflet"
-    ],
-    description:
-      "Project designed and developed by a group of 6 in course ECE650 at the University of Waterloo.",
-  },
-  {
     title: "redux-shopping",
     imgUrl: "/images/project-redux-shopping.png",
-    repoUrl:
-      "https://github.com/807782352/redux-shopping",
+    repoUrl: "https://github.com/807782352/redux-shopping",
     demoUrl: "https://redux-shopping-beta.vercel.app/",
-    techs: [
-      "JavaScript",
-      "React",
-      "CSS",
-      "HTML",
-      "BootStrap",
-      "React-Redux",
-    ],
+    techs: ["JavaScript", "React", "CSS", "HTML", "BootStrap", "React-Redux"],
     description:
       "This project is primarily focused on learning Redux, and is based on the video at https://www.youtube.com/watch?v=A_vRvDAZuOo. It involves building and expanding upon the functionality presented in the video.",
-  },
-  {
-    title: "mec-covid-tracker",
-    imgUrl: "/images/project-covid-tracker.png",
-    repoUrl:
-      "https://github.com/807782352/mec-covid-tracker-restored",
-    demoUrl: "https://mec-covid-tracker-restored.vercel.app/",
-    techs: [
-      "JavaScript",
-      "React",
-      "CSS",
-      "HTML",
-      "MaterialUI",
-      "Leaflet"
-    ],
-    description:
-      "This is a restoration of our previous second-prize-winning project in the MEC competition (the original code was damaged). The project's purpose is to monitor COVID globally in real-time, presenting data through images and tables. The data source is https://disease.sh/.",
   },
 ];
 
 export default function Project() {
   return (
-    <div className="container mx-auto mt-32 " >
+    <div className="container mx-auto mt-32 ">
       <SectionHeader
         title="Project"
         subtitle="A list of projects I studied or worked on"
