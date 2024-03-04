@@ -43,6 +43,7 @@ const PROJECTS_DATA = [
     description:
       "This is a restoration of our previous second-prize-winning project in the MEC competition (the original code was damaged). The project's purpose is to monitor COVID globally in real-time, presenting data through images and tables. The data source is https://disease.sh/.",
   },
+
   {
     title: "reggie-takeout",
     imgUrl: "/images/project-reggie.png",
@@ -59,8 +60,24 @@ const PROJECTS_DATA = [
       "Maven",
     ],
     description:
-      "Based on the video, the project involves the creation of a full-stack design for the Reggie Takeaway backend, focusing on a comprehensive web application that includes both a customer-facing delivery interface and a backend management system. The primary technology stack utilized includes Java, SpringBoot, and Mybatis. This project showcases the development of a sophisticated food delivery platform, integrating client-side functionalities with an administrative backend, leveraging the strengths of these technologies to create a seamless and efficient user experience. The design and implementation of this project demonstrate a deep understanding of full-stack development, from front-end user interaction to backend data management and server-side logic. Video source: https://www.bilibili.com/video/BV13a411q753",
+      "Developed the Reggie Takeaway platform with a SpringBoot-built merchant management and client ordering system, utilizing MySql for data consistency and Mybatis-Plus for object-relational mapping. Implemented pagination for enhanced database queries and integrated Aliyun SMS for secure two-factor authentication, streamlining both user experience and operational efficiency in a comprehensive full-stack design.",
   },
+
+  {
+    title: "Hand Motion Supporting Device",
+    imgUrl: "/images/project-hmsd.png",
+    repoUrl: "https://github.com/807782352/Codes_Projects/tree/main/capstone_HMSD",
+    demoUrl: "https://www.youtube.com/watch?v=iIK4KwtpoCI",
+    techs: [
+      "Python",
+      "MySQL",
+      "Arduino C++",
+      "Autodesk Inventor"
+    ],
+    description:
+      "Led the development of a sensor-equipped rehabilitation glove to aid in finger training, with customizable speed and force settings. Crafted a Python Tkinter interface for enhanced user interaction and managed data via MySQL for effective storage. Utilized Python's Serial library and MySQL connectivity for efficient data exchange between the Python interface and Arduino-controlled electromechanical systems, enabling precise finger movement adjustments based on sensor feedback.",
+  },
+
   {
     title: "popcorn-movie",
     imgUrl: "/images/project-movie.png",
@@ -68,7 +85,7 @@ const PROJECTS_DATA = [
     demoUrl: "https://popcorn-movie-eight.vercel.app/",
     techs: ["JavaScript", "React", "CSS", "HTML"],
     description:
-      "Project learned and developed from Jonas Schmedtmann in his bootcamp: The Ultimate React Course 2024: React, Redux & More",
+      "Developed a user-friendly movie search and rating website, leveraging the OMDB API for extensive movie data access. Utilized React's useState and useEffect hooks for state management and side effects handling, ensuring a dynamic and responsive user experience.",
   },
   {
     title: "react-quiz",
@@ -77,7 +94,7 @@ const PROJECTS_DATA = [
     demoUrl: "https://react-quiz-three-neon.vercel.app/",
     techs: ["JavaScript", "React", "CSS", "HTML", "React Context"],
     description:
-      "Project learned and developed from Jonas Schmedtmann in his bootcamp: The Ultimate React Course 2024: React, Redux & More",
+      "Led the development of an interactive quiz website using React, featuring a comprehensive question bank, a mini scoring system, and a timer. Implemented advanced React features and hooks such as createContext, useContext, useEffect, and useReducer to manage global state, side effects, and complex state logic efficiently.",
   },
   {
     title: "fast pizza",
@@ -93,7 +110,7 @@ const PROJECTS_DATA = [
       "HTML",
     ],
     description:
-      "Project learned and developed from Jonas Schmedtmann in his bootcamp: The Ultimate React Course 2024: React, Redux & More",
+      "Developed a dynamic pizza ordering web application, providing a seamless user experience from menu browsing to order checkout. Leveraged a modern tech stack including React, Redux, React Router Dom, and TailwindCSS, coupled with efficient data fetching techniques to ensure real-time menu updates and order processing.",
   },
   {
     title: "worldwise tracker",
@@ -102,7 +119,7 @@ const PROJECTS_DATA = [
     demoUrl: "https://react-worldwise-rosy.vercel.app/",
     techs: ["JavaScript", "React", "Tailwind CSS", "HTML", "React Context"],
     description:
-      "Project learned and developed from Jonas Schmedtmann in his bootcamp: The Ultimate React Course 2024: React, Redux & More",
+      "Developed an interactive world map application enabling users to log visits to different countries and regions, add personal notes like a diary, and pinpoint their current location. Implemented robust authentication to ensure user data privacy. Utilized a modern JavaScript stack including React, Leaflet for mapping, and Axios for API interactions, useContext for global state management.",
   },
   {
     title: "redux-shopping",
@@ -111,7 +128,7 @@ const PROJECTS_DATA = [
     demoUrl: "https://redux-shopping-beta.vercel.app/",
     techs: ["JavaScript", "React", "CSS", "HTML", "BootStrap", "React-Redux"],
     description:
-      "This project is primarily focused on learning Redux, and is based on the video at https://www.youtube.com/watch?v=A_vRvDAZuOo. It involves building and expanding upon the functionality presented in the video.",
+      "Developed a compact e-commerce website featuring global state management with Redux, enabling seamless shopping experiences. This project showcased advanced state handling techniques and integrated key functionalities such as product listings and a shopping cart.",
   },
 ];
 
