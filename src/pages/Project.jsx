@@ -65,7 +65,7 @@ const PROJECTS_DATA = [
 
   {
     title: "Hand Motion Supporting Device",
-    imgUrl: "/images/project-hmsd.png",
+    imgUrl: "/images/project-hmsd.jpg",
     repoUrl: "https://github.com/807782352/Codes_Projects/tree/main/capstone_HMSD",
     demoUrl: "https://www.youtube.com/watch?v=iIK4KwtpoCI",
     techs: [
