@@ -31,7 +31,7 @@ const PROJECTS_DATA = [
       "Leaflet",
     ],
     description:
-      "Project designed and developed by a group of 6 in course ECE650 at the University of Waterloo.",
+      "A team of six developers leveraged front-end and back-end separation techniques to create a travel website within a four-month agile development cycle. The project utilized React and Material UI for the front end to ensure a responsive and intuitive user interface, while the backend was developed with SpringBoot for efficient data handling and scalability. Hosted on AWS EC2, the website provides a platform for travelers to share experiences, post travel guides, and engage in discussions, thereby facilitating a community-driven exchange of travel insights and recommendations.",
   },
 
   {
