@@ -65,7 +65,7 @@ const SKILL_DATA = [
     title: "Vue",
     imgUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/640px-Vue.js_Logo_2.svg.png",
-    categories: ["all", "library", "frontend"],
+    categories: ["all", "framework", "frontend"],
     id: "005",
     color: "#45cc90",
   },
@@ -228,6 +228,30 @@ const SKILL_DATA = [
     id: "029",
     color: "#f4f6f9",
   },
+  {
+    title: "Angular",
+    imgUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg",
+    categories: ["all", "framework", "frontend"],
+    id: "030",
+    color: "#e5031d",
+  },
+  {
+    title: "TypeScript",
+    imgUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+    categories: ["all", "language", "frontend"],
+    id: "031",
+    color: "#70a9e7",
+  },
+  {
+    title: "Scikit-learn",
+    imgUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
+    categories: ["all", "ml"],
+    id: "032",
+    color: "#ff9d21",
+  },
 ];
 
 const SKILL_TAB = [
@@ -253,9 +277,13 @@ export default function Skill() {
 
   return (
     <div className="container mx-auto mt-32">
-      <SectionHeader title="skills" subtitle="A list of my skills and tools"  id="skill"/>
+      <SectionHeader
+        title="skills"
+        subtitle="A list of my skills and tools"
+        id="skill"
+      />
 
-      <div className="mt-24 flex items-center justify-start gap-4 flex-wrap">
+      <div className="mt-24 flex flex-wrap items-center justify-start gap-4">
         {SKILL_TAB.map((item) => (
           <TabButton
             key={item.id}
@@ -272,11 +300,9 @@ export default function Skill() {
           item.categories.find((category) => category === tab),
         )?.map((el) => (
           // Reset the animation (little influence in small projects)
-          <SkillItem skill={el} key={tab + "-"+ el.id } />
+          <SkillItem skill={el} key={tab + "-" + el.id} />
         ))}
       </ul>
     </div>
   );
 }
-
-

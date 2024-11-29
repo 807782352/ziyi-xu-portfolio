@@ -13,6 +13,28 @@ import Button from "../ui/Button";
 
 const PROJECTS_DATA = [
   {
+    title: "EpicEats",
+    imgUrl: "/images/project-epiceats.png",
+    repoUrl:
+      "https://github.com/807782352/epic-eats",
+    demoUrl: "",
+    techs: [
+      "JavaScript",
+      "React",
+      "CSS",
+      "HTML",
+      "MaterialUI",
+      "Java",
+      "SpringBoot",
+      "PostgreSQL",
+      "AWS",
+      "JPA",
+      "Docker"
+    ],
+    description:
+      "Self developed a responsive restaurant website and content management system interfaces using React.js and Material UI.",
+  },
+  {
     title: "tripedia",
     imgUrl: "/images/project-tripedia.png",
     repoUrl:
