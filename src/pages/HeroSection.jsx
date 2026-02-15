@@ -25,11 +25,13 @@ export default function HeroSection() {
                 // Same substring at the start will only be typed out once, initially
                 "Ziyi Xu",
                 1000, // wait 1s before replacing "Mice" with "Hamsters"
-                "Full-stack Web Developer",
+                "Data Scientist",
                 1000,
-                "Software Engineer",
+                "Data Analyst",
                 1000,
-                "interested in coding",
+                "Software Developer",
+                1000,
+                "interested in machine learning and AI",
                 1000,
                 "seeking for a job",
                 1000,
@@ -40,14 +42,13 @@ export default function HeroSection() {
               repeat={Infinity}
             />
           </h1>
-          <p className=" text-lg text-slate-300 md:text-lg lg:text-xl">
-            Welcome to my <span className="highlight">protfolio</span>! My name
-            is <span className="highlight">Ziyi Xu</span>. I'm a dedicate and
-            experienced <span className="highlight">full-stack</span> developer
-            with a unique journey that began in the intricacies of{" "}
-            <span className="highlight">back-end</span> technology and expanded
-            to the creative realm of{" "}
-            <span className="highlight">front-end</span> development.
+          <p className="text-lg text-slate-300 md:text-lg lg:text-xl">
+            Welcome to my <span className="highlight">portfolio</span>! My name
+            is <span className="highlight">Ziyi Xu</span>. I am a{" "}
+            <span className="highlight">data scientist</span> with a background
+            in <span className="highlight">full-stack development</span>. I
+            transitioned from building systems to designing predictive models
+            and analytical solutions that support real-world business decisions.
           </p>
 
           <div className="mr-6 mt-4 sm:flex lg:mt-6">

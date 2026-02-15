@@ -10,27 +10,26 @@ const TAB_DATA = [
     content: (
       <>
         <p>
-          Hello! I'm Ziyi Xu, a fresh graduate passionate with a deep interest
-          in innovation and technological exploration. Drawn to the potential of
-          the internet IT field, I chose to specialize in software during my
-          university years. Over five years, I've honed my skills in software
-          development, backend algorithms, front-end design, and machine
-          learning, becoming proficient in languages like Java, JavaScript,
-          Python, and C/C++.
+          Hello, my name is Ziyi Xu. I am currently a Master of Management
+          Analytics candidate at the University of Toronto. Before transitioning
+          into analytics, I worked as a software developer with an engineering
+          background.
         </p>
         <p>
-          I have a sincere interest in design and programming, always eager to
-          incorporate the latest technologies into my projects. I pay attention
-          to detail, pursue an organized approach to programming, and use
-          logical thinking to solve problems. I am a quick learner, able to
-          swiftly adapt to new challenges. My team spirit, collaborative
-          ability, and problem-solving skills have been acknowledged in various
-          group projects by my teammates.
+          My interests gradually shifted toward machine learning and data-driven
+          decision-making. I am passionate about building predictive models that
+          uncover hidden patterns in data and support real-world business
+          strategy.
         </p>
         <p>
-          With a blend of technical knowledge and a passion for innovation, I am
-          excited to contribute to dynamic tech environments, bringing fresh
-          perspectives and enthusiasm to each endeavor.
+          For my work experience, I have collaborated with the BMO Marketing
+          team to develop Customer Lifetime Value (CLV) and persona segmentation
+          models, and worked at Nanjing Yuanquan Software Technology Co. to
+          build an LLM-based AI agent.
+        </p>
+        <p>
+          Beyond academics and professional work, I enjoy badminton, chess,
+          basketball, and esports.
         </p>
       </>
     ),
@@ -41,38 +40,57 @@ const TAB_DATA = [
     content: (
       <>
         <p>
-          Hello! I'm Ziyi Xu, a recent graduate with a keen interest in
-          exploring and creating new things. From an early age, I've been
-          fascinated by innovation and the hands-on process of bringing fresh
-          ideas to life. This passion led me to pursue a career in the
-          burgeoning field of Internet IT, where I majored in software-related
-          studies.
+          Hello, my name is Ziyi Xu. I am currently pursuing a Master of
+          Management Analytics at the University of Toronto. My academic
+          background is rooted in engineering. I completed my undergraduate
+          degree in Mechatronics Engineering and later earned a Master's degree
+          in Electrical and Computer Engineering. These experiences strengthened
+          my foundation in mathematics, algorithms, and system design.
         </p>
         <p>
-          During my five years in university, I delved into various aspects of
-          technology, including software development, backend algorithms,
-          front-end design, and even machine learning. I have gained proficiency
-          in programming languages such as Java, JavaScript, Python, and C/C++.
+          Before transitioning into analytics, I worked as a software developer.
+          Through this experience, I developed a solid understanding of backend
+          systems, algorithm implementation, and structured programming. I am
+          proficient in Python, Java, JavaScript, and C/C++, and have experience
+          working with SQL and machine learning frameworks.
         </p>
         <p>
-          Design, programming, and the application of advanced technologies in
-          projects are what excite me the most. I eagerly look forward to new
-          technological advancements and continuously strive to incorporate them
-          into my work. I pride myself on my attention to detail, clarity in
-          programming structure, and strong logical reasoning.
+          While designing on CRM systems for my aunt's restaurant, I began to
+          recognize how important data was to every business decision. Beyond
+          building features and maintaining systems, I became curious about the
+          patterns hidden within the data itself. With the rapid development of
+          AI and my growing interest in machine learning, I started to explore
+          how data could be used not just to build systems, but to drive smarter
+          decisions. I found the process of uncovering insights and translating
+          them into actionable strategies both intellectually challenging and
+          genuinely exciting.
         </p>
         <p>
-          I consider myself a quick learner, capable of rapidly acquiring new
-          skills to achieve set goals. In the numerous group projects I've
-          participated in, my teammates have consistently recognized my strong
-          sense of responsibility, collaborative spirit, and problem-solving
-          abilities.
+          During my time in the MMA program, I worked with the BMO Marketing
+          team to develop Customer Lifetime Value (CLV) and persona segmentation
+          models. We built a predictive framework to forecast 12-month revenue
+          and used segmentation techniques to support targeted marketing
+          strategies and campaign planning. This project strengthened my ability
+          to connect modeling results with practical business applications.
         </p>
         <p>
-          With a blend of technical expertise and a zeal for innovation, I am
-          eager to contribute to and grow within dynamic tech environments,
-          bringing fresh perspectives and enthusiasm to every project I
-          undertake.
+          In addition, I worked at Nanjing Yuanquan Software Technology Co.,
+          where I helped develop an LLM-based customer service agent. The system
+          was designed to automate user inquiries and retrieve relevant
+          information efficiently through natural language processing. This
+          experience deepened my understanding of large language models and
+          their real-world deployment.
+        </p>
+        <p>
+          Outside of academics and work, I enjoy badminton, chess, basketball,
+          and esports. I appreciate the strategy and discipline behind these
+          activities, which also influence the way I approach challenges in my
+          professional life.
+        </p>
+        <p>
+          I hope to continue growing at the intersection of technology and
+          analytics, contributing to projects where data can create meaningful
+          and measurable impact.
         </p>
       </>
     ),
